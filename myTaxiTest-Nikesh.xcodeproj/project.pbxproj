@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C18AF05D4926B9AA4AA484 /* Pods_myTaxiTest_NikeshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2BB38D199E63FF1CC74974 /* Pods_myTaxiTest_NikeshTests.framework */; };
+		22FC02FB70B820C318C4B8DD /* Pods_myTaxiTest_Nikesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032A655AE102FE723C8F18AC /* Pods_myTaxiTest_Nikesh.framework */; };
+		4A0C38FB621CF96B2BD6DEE0 /* Pods_myTaxiTest_NikeshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820FD10535A19EAE690E7E6B /* Pods_myTaxiTest_NikeshUITests.framework */; };
+		9442104822293854006A6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442104722293854006A6BBC /* AppDelegate.swift */; };
+		9442104A22293854006A6BBC /* VehiclesDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442104922293854006A6BBC /* VehiclesDashboardViewController.swift */; };
+		9442104D22293854006A6BBC /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9442104B22293854006A6BBC /* Dashboard.storyboard */; };
+		9442104F22293855006A6BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9442104E22293855006A6BBC /* Assets.xcassets */; };
+		9442105222293855006A6BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9442105022293855006A6BBC /* LaunchScreen.storyboard */; };
+		9442105D22293855006A6BBC /* myTaxiTest_NikeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442105C22293855006A6BBC /* myTaxiTest_NikeshTests.swift */; };
+		9442106822293855006A6BBC /* myTaxiTest_NikeshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442106722293855006A6BBC /* myTaxiTest_NikeshUITests.swift */; };
+		9442107C222938AD006A6BBC /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442107B222938AD006A6BBC /* Vehicle.swift */; };
+		9442107E222939FE006A6BBC /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442107D222939FE006A6BBC /* Driver.swift */; };
+		9442108122293B46006A6BBC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108022293B46006A6BBC /* NetworkManager.swift */; };
+		9442108522293CD2006A6BBC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108422293CD2006A6BBC /* RoundedView.swift */; };
+		9442108922293FEE006A6BBC /* MyTaxiAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */; };
+		9442108B2229405B006A6BBC /* AdaptiveLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */; };
+		9442108D2229407C006A6BBC /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108C2229407C006A6BBC /* CGFloatExtension.swift */; };
+		9442108F222941C0006A6BBC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108E222941C0006A6BBC /* TableViewExtension.swift */; };
+		94421091222941CD006A6BBC /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94421090222941CD006A6BBC /* StackViewExtension.swift */; };
+		94421093222941DC006A6BBC /* TextFontsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94421092222941DC006A6BBC /* TextFontsExtension.swift */; };
+		9442109522294B4F006A6BBC /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109422294B4F006A6BBC /* VehicleViewModel.swift */; };
+		9442109722294BB7006A6BBC /* VehiclesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109622294BB7006A6BBC /* VehiclesManager.swift */; };
+		9442109C22294E75006A6BBC /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109B22294E75006A6BBC /* ApiConstants.swift */; };
+		9442109F22295536006A6BBC /* RegionVehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109E22295536006A6BBC /* RegionVehicleTableViewCell.swift */; };
+		944210A6222975E2006A6BBC /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944210A5222975E2006A6BBC /* Map.storyboard */; };
+		944210B322298EAF006A6BBC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944210B222298EAF006A6BBC /* MapViewController.m */; };
+		944210C12229C2A9006A6BBC /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210C02229C2A9006A6BBC /* MapViewModel.swift */; };
+		944210C52229C366006A6BBC /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210C42229C366006A6BBC /* Marker.swift */; };
+		944210D0222A48CF006A6BBC /* VehicleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 944210CF222A48CF006A6BBC /* VehicleAnnotation.m */; };
+		944210D2222A91A6006A6BBC /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210D1222A91A6006A6BBC /* MKMapView.swift */; };
+		944210D5222A9F11006A6BBC /* MapBoundCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 944210D4222A9F11006A6BBC /* MapBoundCoordinates.m */; };
+		944210D9222ABB50006A6BBC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210D8222ABB50006A6BBC /* UIView.swift */; };
+		944210DB222ABF5E006A6BBC /* MapBottomStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210DA222ABF5E006A6BBC /* MapBottomStatView.swift */; };
+		944210DD222ABF88006A6BBC /* LocationStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210DC222ABF88006A6BBC /* LocationStatisticsModel.swift */; };
+		944210DF222AC05C006A6BBC /* LocationStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210DE222AC05C006A6BBC /* LocationStatisticsViewModel.swift */; };
+		944210E2222B9243006A6BBC /* DriverInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210E1222B9243006A6BBC /* DriverInfoView.swift */; };
+		944210E4222B93B9006A6BBC /* DriverDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210E3222B93B9006A6BBC /* DriverDetailsViewModel.swift */; };
+		944210E6222BD9B4006A6BBC /* VehicleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210E5222BD9B4006A6BBC /* VehicleDetailsViewController.swift */; };
+		944210E8222BDDF7006A6BBC /* DriverInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944210E7222BDDF7006A6BBC /* DriverInfoView.xib */; };
+		944210EB222BF052006A6BBC /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210EA222BF052006A6BBC /* MyProfileViewController.swift */; };
+		944210ED222BF06C006A6BBC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944210EC222BF06C006A6BBC /* Profile.storyboard */; };
+		944210EF222BF52B006A6BBC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210EE222BF52B006A6BBC /* UIViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9442105922293855006A6BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442103C22293854006A6BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9442104322293854006A6BBC;
+			remoteInfo = "myTaxiTest-Nikesh";
+		};
+		9442106422293855006A6BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9442103C22293854006A6BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9442104322293854006A6BBC;
+			remoteInfo = "myTaxiTest-Nikesh";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032A655AE102FE723C8F18AC /* Pods_myTaxiTest_Nikesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTaxiTest_Nikesh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C204EC468E3166DE470203 /* Pods-myTaxiTest-Nikesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-Nikesh.release.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-Nikesh/Pods-myTaxiTest-Nikesh.release.xcconfig"; sourceTree = "<group>"; };
+		1B6AE8C8B94B3E8DDD61BC42 /* Pods-myTaxiTest-Nikesh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-Nikesh.debug.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-Nikesh/Pods-myTaxiTest-Nikesh.debug.xcconfig"; sourceTree = "<group>"; };
+		820FD10535A19EAE690E7E6B /* Pods_myTaxiTest_NikeshUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTaxiTest_NikeshUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		863E5248267D3BC68EE945E5 /* Pods-myTaxiTest-NikeshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshTests.debug.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshTests/Pods-myTaxiTest-NikeshTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9442104422293854006A6BBC /* myTaxiTest-Nikesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myTaxiTest-Nikesh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442104722293854006A6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9442104922293854006A6BBC /* VehiclesDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDashboardViewController.swift; sourceTree = "<group>"; };
+		9442104C22293854006A6BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		9442104E22293855006A6BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9442105122293855006A6BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9442105322293855006A6BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9442105822293855006A6BBC /* myTaxiTest-NikeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "myTaxiTest-NikeshTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442105C22293855006A6BBC /* myTaxiTest_NikeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTaxiTest_NikeshTests.swift; sourceTree = "<group>"; };
+		9442105E22293855006A6BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9442106322293855006A6BBC /* myTaxiTest-NikeshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "myTaxiTest-NikeshUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442106722293855006A6BBC /* myTaxiTest_NikeshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTaxiTest_NikeshUITests.swift; sourceTree = "<group>"; };
+		9442106922293855006A6BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9442107B222938AD006A6BBC /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		9442107D222939FE006A6BBC /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		9442108022293B46006A6BBC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9442108422293CD2006A6BBC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiAppearance.swift; sourceTree = "<group>"; };
+		9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutConstraint.swift; sourceTree = "<group>"; };
+		9442108C2229407C006A6BBC /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		9442108E222941C0006A6BBC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		94421090222941CD006A6BBC /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
+		94421092222941DC006A6BBC /* TextFontsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFontsExtension.swift; sourceTree = "<group>"; };
+		9442109422294B4F006A6BBC /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		9442109622294BB7006A6BBC /* VehiclesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesManager.swift; sourceTree = "<group>"; };
+		9442109B22294E75006A6BBC /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		9442109E22295536006A6BBC /* RegionVehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionVehicleTableViewCell.swift; sourceTree = "<group>"; };
+		944210A1222974BE006A6BBC /* myTaxiTest-Nikesh-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myTaxiTest-Nikesh-Bridging-Header.h"; sourceTree = "<group>"; };
+		944210A5222975E2006A6BBC /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		944210B122298EAF006A6BBC /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		944210B222298EAF006A6BBC /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		944210C02229C2A9006A6BBC /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		944210C42229C366006A6BBC /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		944210CE222A48CF006A6BBC /* VehicleAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleAnnotation.h; sourceTree = "<group>"; };
+		944210CF222A48CF006A6BBC /* VehicleAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleAnnotation.m; sourceTree = "<group>"; };
+		944210D1222A91A6006A6BBC /* MKMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapView.swift; sourceTree = "<group>"; };
+		944210D3222A9F11006A6BBC /* MapBoundCoordinates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapBoundCoordinates.h; sourceTree = "<group>"; };
+		944210D4222A9F11006A6BBC /* MapBoundCoordinates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapBoundCoordinates.m; sourceTree = "<group>"; };
+		944210D8222ABB50006A6BBC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		944210DA222ABF5E006A6BBC /* MapBottomStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomStatView.swift; sourceTree = "<group>"; };
+		944210DC222ABF88006A6BBC /* LocationStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatisticsModel.swift; sourceTree = "<group>"; };
+		944210DE222AC05C006A6BBC /* LocationStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatisticsViewModel.swift; sourceTree = "<group>"; };
+		944210E1222B9243006A6BBC /* DriverInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInfoView.swift; sourceTree = "<group>"; };
+		944210E3222B93B9006A6BBC /* DriverDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsViewModel.swift; sourceTree = "<group>"; };
+		944210E5222BD9B4006A6BBC /* VehicleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsViewController.swift; sourceTree = "<group>"; };
+		944210E7222BDDF7006A6BBC /* DriverInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverInfoView.xib; sourceTree = "<group>"; };
+		944210EA222BF052006A6BBC /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		944210EC222BF06C006A6BBC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		944210EE222BF52B006A6BBC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		959D04E4EC1562C9219CB954 /* Pods-myTaxiTest-NikeshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshUITests.debug.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshUITests/Pods-myTaxiTest-NikeshUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A450F6534DE0325A1E7934 /* Pods-myTaxiTest-NikeshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshUITests.release.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshUITests/Pods-myTaxiTest-NikeshUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6713988A1B2AA681C1BA0DE /* Pods-myTaxiTest-NikeshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshTests.release.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshTests/Pods-myTaxiTest-NikeshTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA2BB38D199E63FF1CC74974 /* Pods_myTaxiTest_NikeshTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTaxiTest_NikeshTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9442104122293854006A6BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FC02FB70B820C318C4B8DD /* Pods_myTaxiTest_Nikesh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442105522293855006A6BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C18AF05D4926B9AA4AA484 /* Pods_myTaxiTest_NikeshTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442106022293855006A6BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0C38FB621CF96B2BD6DEE0 /* Pods_myTaxiTest_NikeshUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09ECE372CCA159295B044819 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AE8C8B94B3E8DDD61BC42 /* Pods-myTaxiTest-Nikesh.debug.xcconfig */,
+				17C204EC468E3166DE470203 /* Pods-myTaxiTest-Nikesh.release.xcconfig */,
+				863E5248267D3BC68EE945E5 /* Pods-myTaxiTest-NikeshTests.debug.xcconfig */,
+				C6713988A1B2AA681C1BA0DE /* Pods-myTaxiTest-NikeshTests.release.xcconfig */,
+				959D04E4EC1562C9219CB954 /* Pods-myTaxiTest-NikeshUITests.debug.xcconfig */,
+				C5A450F6534DE0325A1E7934 /* Pods-myTaxiTest-NikeshUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9442103B22293854006A6BBC = {
+			isa = PBXGroup;
+			children = (
+				9442104622293854006A6BBC /* myTaxiTest-Nikesh */,
+				9442105B22293855006A6BBC /* myTaxiTest-NikeshTests */,
+				9442106622293855006A6BBC /* myTaxiTest-NikeshUITests */,
+				9442104522293854006A6BBC /* Products */,
+				09ECE372CCA159295B044819 /* Pods */,
+				CF8F12EE16EDB4BF099C7332 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9442104522293854006A6BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442104422293854006A6BBC /* myTaxiTest-Nikesh.app */,
+				9442105822293855006A6BBC /* myTaxiTest-NikeshTests.xctest */,
+				9442106322293855006A6BBC /* myTaxiTest-NikeshUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442104622293854006A6BBC /* myTaxiTest-Nikesh */ = {
+			isa = PBXGroup;
+			children = (
+				9442109A22294E56006A6BBC /* Constants */,
+				9442107F22293B31006A6BBC /* Services */,
+				9442108322293CA9006A6BBC /* Extensions */,
+				9442108222293C9B006A6BBC /* CustomViews */,
+				9442107522293866006A6BBC /* Story */,
+				9442104E22293855006A6BBC /* Assets.xcassets */,
+				9442104722293854006A6BBC /* AppDelegate.swift */,
+				944210A1222974BE006A6BBC /* myTaxiTest-Nikesh-Bridging-Header.h */,
+				9442105022293855006A6BBC /* LaunchScreen.storyboard */,
+				9442105322293855006A6BBC /* Info.plist */,
+			);
+			path = "myTaxiTest-Nikesh";
+			sourceTree = "<group>";
+		};
+		9442105B22293855006A6BBC /* myTaxiTest-NikeshTests */ = {
+			isa = PBXGroup;
+			children = (
+				9442105C22293855006A6BBC /* myTaxiTest_NikeshTests.swift */,
+				9442105E22293855006A6BBC /* Info.plist */,
+			);
+			path = "myTaxiTest-NikeshTests";
+			sourceTree = "<group>";
+		};
+		9442106622293855006A6BBC /* myTaxiTest-NikeshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9442106722293855006A6BBC /* myTaxiTest_NikeshUITests.swift */,
+				9442106922293855006A6BBC /* Info.plist */,
+			);
+			path = "myTaxiTest-NikeshUITests";
+			sourceTree = "<group>";
+		};
+		9442107522293866006A6BBC /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				944210E9222BF03D006A6BBC /* Profile */,
+				944210A022297483006A6BBC /* Map */,
+				9442107722293876006A6BBC /* Vehicles */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		9442107622293870006A6BBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9442109D222954E0006A6BBC /* Cells */,
+				9442107A2229389A006A6BBC /* ViewControllers */,
+				9442104B22293854006A6BBC /* Dashboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9442107722293876006A6BBC /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				9442107922293891006A6BBC /* ViewModels */,
+				9442107822293889006A6BBC /* Models */,
+				9442107622293870006A6BBC /* Views */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		9442107822293889006A6BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9442107B222938AD006A6BBC /* Vehicle.swift */,
+				9442107D222939FE006A6BBC /* Driver.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9442107922293891006A6BBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9442109822294BBC006A6BBC /* Managers */,
+				9442109422294B4F006A6BBC /* VehicleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9442107A2229389A006A6BBC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9442104922293854006A6BBC /* VehiclesDashboardViewController.swift */,
+				944210E5222BD9B4006A6BBC /* VehicleDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9442107F22293B31006A6BBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9442108022293B46006A6BBC /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9442108222293C9B006A6BBC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9442108422293CD2006A6BBC /* RoundedView.swift */,
+				9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */,
+				9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9442108322293CA9006A6BBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9442108C2229407C006A6BBC /* CGFloatExtension.swift */,
+				9442108E222941C0006A6BBC /* TableViewExtension.swift */,
+				94421090222941CD006A6BBC /* StackViewExtension.swift */,
+				94421092222941DC006A6BBC /* TextFontsExtension.swift */,
+				944210D1222A91A6006A6BBC /* MKMapView.swift */,
+				944210D8222ABB50006A6BBC /* UIView.swift */,
+				944210EE222BF52B006A6BBC /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9442109822294BBC006A6BBC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9442109622294BB7006A6BBC /* VehiclesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9442109A22294E56006A6BBC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9442109B22294E75006A6BBC /* ApiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9442109D222954E0006A6BBC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9442109E22295536006A6BBC /* RegionVehicleTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		944210A022297483006A6BBC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				944210C22229C2CB006A6BBC /* ViewModel */,
+				944210C32229C35A006A6BBC /* Model */,
+				944210A72229762D006A6BBC /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		944210A72229762D006A6BBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				944210C6222A4050006A6BBC /* Custom Marker */,
+				944210A82229763F006A6BBC /* View Controllers */,
+				944210A5222975E2006A6BBC /* Map.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		944210A82229763F006A6BBC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				944210B122298EAF006A6BBC /* MapViewController.h */,
+				944210B222298EAF006A6BBC /* MapViewController.m */,
+				944210E0222B9221006A6BBC /* Custom Views */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		944210C22229C2CB006A6BBC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				944210C02229C2A9006A6BBC /* MapViewModel.swift */,
+				944210DE222AC05C006A6BBC /* LocationStatisticsViewModel.swift */,
+				944210E3222B93B9006A6BBC /* DriverDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		944210C32229C35A006A6BBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				944210C42229C366006A6BBC /* Marker.swift */,
+				944210D3222A9F11006A6BBC /* MapBoundCoordinates.h */,
+				944210D4222A9F11006A6BBC /* MapBoundCoordinates.m */,
+				944210DC222ABF88006A6BBC /* LocationStatisticsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		944210C6222A4050006A6BBC /* Custom Marker */ = {
+			isa = PBXGroup;
+			children = (
+				944210CE222A48CF006A6BBC /* VehicleAnnotation.h */,
+				944210CF222A48CF006A6BBC /* VehicleAnnotation.m */,
+			);
+			path = "Custom Marker";
+			sourceTree = "<group>";
+		};
+		944210E0222B9221006A6BBC /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				944210DA222ABF5E006A6BBC /* MapBottomStatView.swift */,
+				944210E1222B9243006A6BBC /* DriverInfoView.swift */,
+				944210E7222BDDF7006A6BBC /* DriverInfoView.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		944210E9222BF03D006A6BBC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				944210EA222BF052006A6BBC /* MyProfileViewController.swift */,
+				944210EC222BF06C006A6BBC /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CF8F12EE16EDB4BF099C7332 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032A655AE102FE723C8F18AC /* Pods_myTaxiTest_Nikesh.framework */,
+				DA2BB38D199E63FF1CC74974 /* Pods_myTaxiTest_NikeshTests.framework */,
+				820FD10535A19EAE690E7E6B /* Pods_myTaxiTest_NikeshUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9442104322293854006A6BBC /* myTaxiTest-Nikesh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442106C22293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-Nikesh" */;
+			buildPhases = (
+				1F0D7364467752DC3260E516 /* [CP] Check Pods Manifest.lock */,
+				9442104022293854006A6BBC /* Sources */,
+				9442104122293854006A6BBC /* Frameworks */,
+				9442104222293854006A6BBC /* Resources */,
+				0B513476FFBE47B4C6AAC300 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "myTaxiTest-Nikesh";
+			productName = "myTaxiTest-Nikesh";
+			productReference = 9442104422293854006A6BBC /* myTaxiTest-Nikesh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9442105722293855006A6BBC /* myTaxiTest-NikeshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442106F22293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-NikeshTests" */;
+			buildPhases = (
+				913950190B23CAC92DB4DBEC /* [CP] Check Pods Manifest.lock */,
+				9442105422293855006A6BBC /* Sources */,
+				9442105522293855006A6BBC /* Frameworks */,
+				9442105622293855006A6BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9442105A22293855006A6BBC /* PBXTargetDependency */,
+			);
+			name = "myTaxiTest-NikeshTests";
+			productName = "myTaxiTest-NikeshTests";
+			productReference = 9442105822293855006A6BBC /* myTaxiTest-NikeshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9442106222293855006A6BBC /* myTaxiTest-NikeshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442107222293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-NikeshUITests" */;
+			buildPhases = (
+				3D4739BF4A582F3CEF4D9894 /* [CP] Check Pods Manifest.lock */,
+				9442105F22293855006A6BBC /* Sources */,
+				9442106022293855006A6BBC /* Frameworks */,
+				9442106122293855006A6BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9442106522293855006A6BBC /* PBXTargetDependency */,
+			);
+			name = "myTaxiTest-NikeshUITests";
+			productName = "myTaxiTest-NikeshUITests";
+			productReference = 9442106322293855006A6BBC /* myTaxiTest-NikeshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9442103C22293854006A6BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nikesh Shakya";
+				TargetAttributes = {
+					9442104322293854006A6BBC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					9442105722293855006A6BBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9442104322293854006A6BBC;
+					};
+					9442106222293855006A6BBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9442104322293854006A6BBC;
+					};
+				};
+			};
+			buildConfigurationList = 9442103F22293854006A6BBC /* Build configuration list for PBXProject "myTaxiTest-Nikesh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9442103B22293854006A6BBC;
+			productRefGroup = 9442104522293854006A6BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9442104322293854006A6BBC /* myTaxiTest-Nikesh */,
+				9442105722293855006A6BBC /* myTaxiTest-NikeshTests */,
+				9442106222293855006A6BBC /* myTaxiTest-NikeshUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9442104222293854006A6BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944210ED222BF06C006A6BBC /* Profile.storyboard in Resources */,
+				944210E8222BDDF7006A6BBC /* DriverInfoView.xib in Resources */,
+				9442105222293855006A6BBC /* LaunchScreen.storyboard in Resources */,
+				9442104F22293855006A6BBC /* Assets.xcassets in Resources */,
+				9442104D22293854006A6BBC /* Dashboard.storyboard in Resources */,
+				944210A6222975E2006A6BBC /* Map.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442105622293855006A6BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442106122293855006A6BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B513476FFBE47B4C6AAC300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myTaxiTest-Nikesh/Pods-myTaxiTest-Nikesh-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myTaxiTest-Nikesh/Pods-myTaxiTest-Nikesh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F0D7364467752DC3260E516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myTaxiTest-Nikesh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4739BF4A582F3CEF4D9894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myTaxiTest-NikeshUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913950190B23CAC92DB4DBEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myTaxiTest-NikeshTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9442104022293854006A6BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944210EB222BF052006A6BBC /* MyProfileViewController.swift in Sources */,
+				944210DF222AC05C006A6BBC /* LocationStatisticsViewModel.swift in Sources */,
+				9442109722294BB7006A6BBC /* VehiclesManager.swift in Sources */,
+				944210D5222A9F11006A6BBC /* MapBoundCoordinates.m in Sources */,
+				9442108B2229405B006A6BBC /* AdaptiveLayoutConstraint.swift in Sources */,
+				944210E6222BD9B4006A6BBC /* VehicleDetailsViewController.swift in Sources */,
+				9442109C22294E75006A6BBC /* ApiConstants.swift in Sources */,
+				944210B322298EAF006A6BBC /* MapViewController.m in Sources */,
+				944210E4222B93B9006A6BBC /* DriverDetailsViewModel.swift in Sources */,
+				944210DD222ABF88006A6BBC /* LocationStatisticsModel.swift in Sources */,
+				9442107C222938AD006A6BBC /* Vehicle.swift in Sources */,
+				9442109F22295536006A6BBC /* RegionVehicleTableViewCell.swift in Sources */,
+				944210D2222A91A6006A6BBC /* MKMapView.swift in Sources */,
+				944210E2222B9243006A6BBC /* DriverInfoView.swift in Sources */,
+				9442104A22293854006A6BBC /* VehiclesDashboardViewController.swift in Sources */,
+				9442108522293CD2006A6BBC /* RoundedView.swift in Sources */,
+				9442108122293B46006A6BBC /* NetworkManager.swift in Sources */,
+				944210C52229C366006A6BBC /* Marker.swift in Sources */,
+				9442108F222941C0006A6BBC /* TableViewExtension.swift in Sources */,
+				944210C12229C2A9006A6BBC /* MapViewModel.swift in Sources */,
+				9442108D2229407C006A6BBC /* CGFloatExtension.swift in Sources */,
+				944210D0222A48CF006A6BBC /* VehicleAnnotation.m in Sources */,
+				944210D9222ABB50006A6BBC /* UIView.swift in Sources */,
+				9442108922293FEE006A6BBC /* MyTaxiAppearance.swift in Sources */,
+				94421091222941CD006A6BBC /* StackViewExtension.swift in Sources */,
+				9442104822293854006A6BBC /* AppDelegate.swift in Sources */,
+				94421093222941DC006A6BBC /* TextFontsExtension.swift in Sources */,
+				944210EF222BF52B006A6BBC /* UIViewController.swift in Sources */,
+				9442109522294B4F006A6BBC /* VehicleViewModel.swift in Sources */,
+				944210DB222ABF5E006A6BBC /* MapBottomStatView.swift in Sources */,
+				9442107E222939FE006A6BBC /* Driver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442105422293855006A6BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442105D22293855006A6BBC /* myTaxiTest_NikeshTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9442105F22293855006A6BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442106822293855006A6BBC /* myTaxiTest_NikeshUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9442105A22293855006A6BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9442104322293854006A6BBC /* myTaxiTest-Nikesh */;
+			targetProxy = 9442105922293855006A6BBC /* PBXContainerItemProxy */;
+		};
+		9442106522293855006A6BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9442104322293854006A6BBC /* myTaxiTest-Nikesh */;
+			targetProxy = 9442106422293855006A6BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9442104B22293854006A6BBC /* Dashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442104C22293854006A6BBC /* Base */,
+			);
+			name = Dashboard.storyboard;
+			sourceTree = "<group>";
+		};
+		9442105022293855006A6BBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9442105122293855006A6BBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9442106A22293855006A6BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9442106B22293855006A6BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9442106D22293855006A6BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6AE8C8B94B3E8DDD61BC42 /* Pods-myTaxiTest-Nikesh.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-Nikesh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-Nikesh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myTaxiTest-Nikesh/myTaxiTest-Nikesh-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9442106E22293855006A6BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C204EC468E3166DE470203 /* Pods-myTaxiTest-Nikesh.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-Nikesh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-Nikesh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myTaxiTest-Nikesh/myTaxiTest-Nikesh-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9442107022293855006A6BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863E5248267D3BC68EE945E5 /* Pods-myTaxiTest-NikeshTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-NikeshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-NikeshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTaxiTest-Nikesh.app/myTaxiTest-Nikesh";
+			};
+			name = Debug;
+		};
+		9442107122293855006A6BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6713988A1B2AA681C1BA0DE /* Pods-myTaxiTest-NikeshTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-NikeshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-NikeshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTaxiTest-Nikesh.app/myTaxiTest-Nikesh";
+			};
+			name = Release;
+		};
+		9442107322293855006A6BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959D04E4EC1562C9219CB954 /* Pods-myTaxiTest-NikeshUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-NikeshUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-NikeshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "myTaxiTest-Nikesh";
+			};
+			name = Debug;
+		};
+		9442107422293855006A6BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A450F6534DE0325A1E7934 /* Pods-myTaxiTest-NikeshUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UPQMGDBYQ;
+				INFOPLIST_FILE = "myTaxiTest-NikeshUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nikeshakya.myTaxiTest-NikeshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "myTaxiTest-Nikesh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9442103F22293854006A6BBC /* Build configuration list for PBXProject "myTaxiTest-Nikesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442106A22293855006A6BBC /* Debug */,
+				9442106B22293855006A6BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442106C22293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-Nikesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442106D22293855006A6BBC /* Debug */,
+				9442106E22293855006A6BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442106F22293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-NikeshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442107022293855006A6BBC /* Debug */,
+				9442107122293855006A6BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442107222293855006A6BBC /* Build configuration list for PBXNativeTarget "myTaxiTest-NikeshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442107322293855006A6BBC /* Debug */,
+				9442107422293855006A6BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9442103C22293854006A6BBC /* Project object */;
+}

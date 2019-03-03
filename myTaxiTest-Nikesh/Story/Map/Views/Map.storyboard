@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeS-Rj-L3P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="qAA-dv-fgA">
+            <objects>
+                <viewController id="jeS-Rj-L3P" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2w-zy-eXG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fE-Pp-FuG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arS-7d-K3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                                        <subviews>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvT-Ed-mEV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="jeS-Rj-L3P" id="SSG-nH-liM"/>
+                                                </connections>
+                                            </mapView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9jo-vi-wCO">
+                                                <rect key="frame" x="87.5" y="208.5" width="200" height="50"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd5-5C-86s" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                                        <subviews>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILu-w4-0ZA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-ic" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mnm-86-EIz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Mnm-86-EIz" firstAttribute="top" secondItem="ILu-w4-0ZA" secondAttribute="top" id="8lX-v2-qjX"/>
+                                                                    <constraint firstItem="Mnm-86-EIz" firstAttribute="leading" secondItem="ILu-w4-0ZA" secondAttribute="leading" id="9H9-Fr-Y2X"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="FCF-hU-Z1F" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstAttribute="width" constant="30" id="Vnh-85-cFM" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstAttribute="bottom" secondItem="Mnm-86-EIz" secondAttribute="bottom" id="l1K-QB-BUL"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Mnm-86-EIz" secondAttribute="trailing" id="pER-Lt-J2y"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIo-Ul-cn3">
+                                                                <rect key="frame" x="38" y="6.5" width="154" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="qIo-Ul-cn3" firstAttribute="leading" secondItem="ILu-w4-0ZA" secondAttribute="trailing" constant="8" id="BtL-GC-cYV" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="200" id="Mum-dy-duT" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                            <constraint firstAttribute="trailing" secondItem="qIo-Ul-cn3" secondAttribute="trailing" constant="8" id="OmD-eA-M6g" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                            <constraint firstItem="qIo-Ul-cn3" firstAttribute="centerY" secondItem="jd5-5C-86s" secondAttribute="centerY" id="PKW-Zs-Dan"/>
+                                                            <constraint firstItem="ILu-w4-0ZA" firstAttribute="top" secondItem="jd5-5C-86s" secondAttribute="top" id="bQn-Z5-yOj"/>
+                                                            <constraint firstItem="ILu-w4-0ZA" firstAttribute="leading" secondItem="jd5-5C-86s" secondAttribute="leading" id="np0-0W-Ch0"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ILu-w4-0ZA" secondAttribute="bottom" id="sd3-9U-KI9"/>
+                                                            <constraint firstAttribute="height" constant="30" id="tQx-qT-NvD" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9W9-Ez-U7N">
+                                                        <rect key="frame" x="99" y="30" width="2" height="20"/>
+                                                        <color key="backgroundColor" red="0.085934450369999998" green="0.25852967609999999" blue="0.1723655134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="XoI-AC-Qbf" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="2" id="pFF-Gl-UVk"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6J-Fr-cZu" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="40" width="50" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNR-IE-L0M">
+                                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                        <state key="normal" image="back-ic"/>
+                                                        <connections>
+                                                            <action selector="backTapped:" destination="jeS-Rj-L3P" eventType="touchUpInside" id="Ber-gV-olw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.88910006469550196" green="0.90510167521657048" blue="0.90539969193753855" alpha="0.84717465753424659" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="4lX-Vm-RN2" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="xNR-IE-L0M" secondAttribute="trailing" constant="10" id="7tP-XU-mHR" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="xNR-IE-L0M" secondAttribute="bottom" constant="10" id="8Fe-4c-VHe" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstItem="xNR-IE-L0M" firstAttribute="leading" secondItem="j6J-Fr-cZu" secondAttribute="leading" constant="10" id="NAy-WL-Bp5" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstItem="xNR-IE-L0M" firstAttribute="top" secondItem="j6J-Fr-cZu" secondAttribute="top" constant="10" id="Pkm-fc-VqT" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="50" id="sV6-SG-0sU" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPc-dy-XFc" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                <rect key="frame" x="310" y="40" width="50" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="KyV-Qo-34Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlE-CB-Gzc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <connections>
+                                                            <segue destination="Q9f-tM-8Uf" kind="show" id="83o-6H-fjp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.88910006470000003" green="0.90510167519999996" blue="0.90539969190000003" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="KyV-Qo-34Z" firstAttribute="leading" secondItem="MPc-dy-XFc" secondAttribute="leading" id="0aY-fL-rW6"/>
+                                                    <constraint firstAttribute="width" constant="50" id="6v2-ru-qfZ" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="trailing" secondItem="KyV-Qo-34Z" secondAttribute="trailing" id="7gU-gK-fTo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KyV-Qo-34Z" secondAttribute="bottom" id="B0X-5t-Qq9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OlE-CB-Gzc" secondAttribute="trailing" id="H2R-ey-iV3"/>
+                                                    <constraint firstItem="KyV-Qo-34Z" firstAttribute="top" secondItem="MPc-dy-XFc" secondAttribute="top" id="QKJ-hj-9jD"/>
+                                                    <constraint firstItem="OlE-CB-Gzc" firstAttribute="leading" secondItem="MPc-dy-XFc" secondAttribute="leading" id="SsB-oT-kVD"/>
+                                                    <constraint firstItem="OlE-CB-Gzc" firstAttribute="top" secondItem="MPc-dy-XFc" secondAttribute="top" id="h1z-va-0nY"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ihq-NB-XQq" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="bottom" secondItem="OlE-CB-Gzc" secondAttribute="bottom" id="pdy-UZ-C0B"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xvT-Ed-mEV" firstAttribute="top" secondItem="arS-7d-K3g" secondAttribute="top" id="8ez-71-ues"/>
+                                            <constraint firstAttribute="bottom" secondItem="xvT-Ed-mEV" secondAttribute="bottom" id="AL2-WS-hcG"/>
+                                            <constraint firstAttribute="trailing" secondItem="xvT-Ed-mEV" secondAttribute="trailing" id="Bvi-EJ-EEn"/>
+                                            <constraint firstItem="9jo-vi-wCO" firstAttribute="centerY" secondItem="arS-7d-K3g" secondAttribute="centerY" id="IqG-YM-PS8"/>
+                                            <constraint firstAttribute="trailing" secondItem="MPc-dy-XFc" secondAttribute="trailing" constant="15" id="Po9-mN-KuK" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="xvT-Ed-mEV" firstAttribute="leading" secondItem="arS-7d-K3g" secondAttribute="leading" id="Reo-Tk-y6w"/>
+                                            <constraint firstItem="9jo-vi-wCO" firstAttribute="centerX" secondItem="arS-7d-K3g" secondAttribute="centerX" id="k0c-Rb-ZIL"/>
+                                            <constraint firstItem="MPc-dy-XFc" firstAttribute="centerY" secondItem="j6J-Fr-cZu" secondAttribute="centerY" id="tlX-Zp-4n9"/>
+                                            <constraint firstItem="j6J-Fr-cZu" firstAttribute="leading" secondItem="arS-7d-K3g" secondAttribute="leading" constant="15" id="znc-qE-oBi" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yL-qC-vSS">
+                                        <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                        <color key="backgroundColor" name="taxiFontColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="A5q-xM-U0O" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8yL-qC-vSS" firstAttribute="top" secondItem="arS-7d-K3g" secondAttribute="bottom" id="3VP-ct-yEc"/>
+                                    <constraint firstAttribute="bottom" secondItem="8yL-qC-vSS" secondAttribute="bottom" id="Ddk-yU-CmO"/>
+                                    <constraint firstAttribute="trailing" secondItem="8yL-qC-vSS" secondAttribute="trailing" id="HJb-X0-aGR"/>
+                                    <constraint firstAttribute="trailing" secondItem="arS-7d-K3g" secondAttribute="trailing" id="KQY-Px-rMv"/>
+                                    <constraint firstItem="arS-7d-K3g" firstAttribute="leading" secondItem="5fE-Pp-FuG" secondAttribute="leading" id="Kx8-Pp-rGR"/>
+                                    <constraint firstItem="8yL-qC-vSS" firstAttribute="leading" secondItem="5fE-Pp-FuG" secondAttribute="leading" id="MdE-a9-yi3"/>
+                                    <constraint firstItem="arS-7d-K3g" firstAttribute="top" secondItem="5fE-Pp-FuG" secondAttribute="top" id="utt-us-R8i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5fE-Pp-FuG" firstAttribute="top" secondItem="p2w-zy-eXG" secondAttribute="top" id="1kA-4u-vie"/>
+                            <constraint firstItem="oax-0M-dyq" firstAttribute="trailing" secondItem="5fE-Pp-FuG" secondAttribute="trailing" id="K2r-Vj-FuN"/>
+                            <constraint firstItem="oax-0M-dyq" firstAttribute="bottom" secondItem="5fE-Pp-FuG" secondAttribute="bottom" id="Z07-uv-QCK"/>
+                            <constraint firstItem="j6J-Fr-cZu" firstAttribute="top" secondItem="oax-0M-dyq" secondAttribute="top" constant="20" id="k3R-3M-J42" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="5fE-Pp-FuG" firstAttribute="leading" secondItem="oax-0M-dyq" secondAttribute="leading" id="nnt-8H-gNN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oax-0M-dyq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V2d-Vl-Fup"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="addressStatisticsView" destination="yBd-sz-zcu" id="4fz-CN-nuN"/>
+                        <outlet property="bottomListContainer" destination="8yL-qC-vSS" id="Kd6-p0-0i1"/>
+                        <outlet property="centerCoordinateAddressLabel" destination="qIo-Ul-cn3" id="teg-L2-BDK"/>
+                        <outlet property="centerMarkerView" destination="jd5-5C-86s" id="TIQ-tE-peF"/>
+                        <outlet property="mapView" destination="xvT-Ed-mEV" id="7qq-94-c8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoM-jN-L8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-sz-zcu" customClass="MapBottomStatView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jGP-J8-Bpf">
+                            <rect key="frame" x="10" y="34" width="120" height="132.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="e69-Ls-UXH">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="DYU-Kb-WXD" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </constraint>
+                                        <constraint firstAttribute="height" constant="100" id="ero-1q-OO5" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </constraint>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="R3O-rQ-fWg">
+                                    <rect key="frame" x="0.0" y="100" width="120" height="32.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGU-0A-FPF">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.098039215686274508" green="0.29019607843137252" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Germany" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-pf-Bhl">
+                                            <rect key="frame" x="0.0" y="19" width="120" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                            <color key="textColor" red="0.19492736050000001" green="0.41821259350000001" blue="0.38671213319999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="itg-VF-hgb" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmB-ng-dVA">
+                            <rect key="frame" x="145" y="15" width="1" height="170"/>
+                            <color key="backgroundColor" red="0.19492736051286688" green="0.41821259352827322" blue="0.3867121332319931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="NE3-DB-4G4"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VrG-am-T9r">
+                            <rect key="frame" x="156" y="15" width="214" height="176"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYk-M0-let">
+                                    <rect key="frame" x="0.0" y="0.0" width="214" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.098549213349999998" green="0.28886010359999997" blue="0.19171032020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4HJ-vj-BaF">
+                                    <rect key="frame" x="0.0" y="30.5" width="214" height="78"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total rides completed: N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJE-L9-ihF">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" red="0.069817379117012024" green="0.1238449290394783" blue="0.27079975605010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Rank: N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNK-Ph-WaZ">
+                                            <rect key="frame" x="0.0" y="20" width="214" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" red="0.069817379117012024" green="0.1238449290394783" blue="0.27079975605010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Rank: N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLj-le-XcT">
+                                            <rect key="frame" x="0.0" y="40" width="214" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" red="0.069817379117012024" green="0.1238449290394783" blue="0.27079975605010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registered Drivers: N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHv-PC-uVF">
+                                            <rect key="frame" x="0.0" y="60" width="214" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" red="0.069817379117012024" green="0.1238449290394783" blue="0.27079975605010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ldB-fo-qyS">
+                                    <rect key="frame" x="0.0" y="118.5" width="214" height="57.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Drivers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqw-XZ-7s7">
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="15.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="textColor" red="0.069817379117012024" green="0.1238449290394783" blue="0.27079975605010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csf-b9-G34">
+                                            <rect key="frame" x="0.0" y="17.5" width="214" height="40"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJc-DK-jHK" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="hv4-wt-4VE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0OA-jw-ZmQ"/>
+                                                        <constraint firstItem="hv4-wt-4VE" firstAttribute="leading" secondItem="hJc-DK-jHK" secondAttribute="leading" id="Bpl-01-Qia"/>
+                                                        <constraint firstItem="hv4-wt-4VE" firstAttribute="top" secondItem="hJc-DK-jHK" secondAttribute="top" id="O3S-wu-btZ"/>
+                                                        <constraint firstAttribute="width" constant="30" id="SXH-TC-21i"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hv4-wt-4VE" secondAttribute="bottom" id="d5z-ox-Utc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hv4-wt-4VE" secondAttribute="trailing" id="vs3-IX-K7n"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQU-7B-g37" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <rect key="frame" x="45" y="5" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="wsI-En-rLm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="wsI-En-rLm" secondAttribute="bottom" id="81a-9I-3G0"/>
+                                                        <constraint firstAttribute="width" constant="30" id="I0T-Zm-gVs" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="30" id="RvX-fD-Dee" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstItem="wsI-En-rLm" firstAttribute="top" secondItem="ZQU-7B-g37" secondAttribute="top" id="T04-Bm-iVL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wsI-En-rLm" secondAttribute="trailing" id="YQt-91-AmK"/>
+                                                        <constraint firstItem="wsI-En-rLm" firstAttribute="leading" secondItem="ZQU-7B-g37" secondAttribute="leading" id="aly-6E-a6M"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMe-Dp-aAW" customClass="RoundedView" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <rect key="frame" x="90" y="5" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driver-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-Hi-xve">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0Ht-JP-qQd" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="bottom" secondItem="dTs-Hi-xve" secondAttribute="bottom" id="P8c-ci-g8J"/>
+                                                        <constraint firstItem="dTs-Hi-xve" firstAttribute="leading" secondItem="IMe-Dp-aAW" secondAttribute="leading" id="RCU-uM-3Rx"/>
+                                                        <constraint firstAttribute="width" constant="30" id="dRw-OA-weZ" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="dTs-Hi-xve" secondAttribute="trailing" id="dTo-xP-Uet"/>
+                                                        <constraint firstItem="dTs-Hi-xve" firstAttribute="top" secondItem="IMe-Dp-aAW" secondAttribute="top" id="i6I-cI-QBc"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ZQU-7B-g37" firstAttribute="top" secondItem="hJc-DK-jHK" secondAttribute="top" id="90N-2q-IFc"/>
+                                                <constraint firstItem="hJc-DK-jHK" firstAttribute="leading" secondItem="Csf-b9-G34" secondAttribute="leading" id="Ccw-3o-DZt"/>
+                                                <constraint firstItem="hJc-DK-jHK" firstAttribute="top" secondItem="Csf-b9-G34" secondAttribute="top" constant="5" id="G7p-9G-c0I" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstItem="IMe-Dp-aAW" firstAttribute="top" secondItem="hJc-DK-jHK" secondAttribute="top" id="MfQ-4p-Vem"/>
+                                                <constraint firstItem="ZQU-7B-g37" firstAttribute="leading" secondItem="hJc-DK-jHK" secondAttribute="trailing" constant="15" id="Og2-lQ-zG0" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstItem="IMe-Dp-aAW" firstAttribute="leading" secondItem="ZQU-7B-g37" secondAttribute="trailing" constant="15" id="WXp-eU-uQ8" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                                <constraint firstAttribute="height" constant="40" id="wGM-Zp-t4h" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </constraint>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="taxiFontColor"/>
+                    <constraints>
+                        <constraint firstItem="VrG-am-T9r" firstAttribute="leading" secondItem="DmB-ng-dVA" secondAttribute="trailing" constant="10" id="4B8-Vn-auR" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="jGP-J8-Bpf" firstAttribute="centerY" secondItem="yBd-sz-zcu" secondAttribute="centerY" id="9D5-iK-nna"/>
+                        <constraint firstItem="DmB-ng-dVA" firstAttribute="centerY" secondItem="yBd-sz-zcu" secondAttribute="centerY" id="Mh7-hM-LRa"/>
+                        <constraint firstItem="jGP-J8-Bpf" firstAttribute="leading" secondItem="yBd-sz-zcu" secondAttribute="leading" constant="10" id="X4B-ZB-eOc" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="DmB-ng-dVA" firstAttribute="leading" secondItem="jGP-J8-Bpf" secondAttribute="trailing" constant="15" id="fyU-4Y-Wnx" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="VrG-am-T9r" secondAttribute="trailing" constant="5" id="hBf-BK-5vA" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="DmB-ng-dVA" firstAttribute="height" secondItem="yBd-sz-zcu" secondAttribute="height" multiplier="0.85" id="r2W-GY-5nG"/>
+                        <constraint firstItem="VrG-am-T9r" firstAttribute="top" secondItem="DmB-ng-dVA" secondAttribute="top" id="zEF-9P-Rl2"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Bbj-kc-FJc"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="KGU-0A-FPF" id="UOE-Fw-9m2"/>
+                        <outlet property="countryLabel" destination="IK4-pf-Bhl" id="S2I-Oe-H3E"/>
+                        <outlet property="destinationRankLabel" destination="xLj-le-XcT" id="CeC-en-Eaz"/>
+                        <outlet property="pickupRankLabel" destination="ZNK-Ph-WaZ" id="uRS-4f-tt9"/>
+                        <outlet property="placeImageView" destination="e69-Ls-UXH" id="NpZ-WP-H4W"/>
+                        <outlet property="registeredDriversLabel" destination="RHv-PC-uVF" id="g3z-gL-hkl"/>
+                        <outlet property="topDriverPicViewOne" destination="hv4-wt-4VE" id="xDO-Ch-xl5"/>
+                        <outlet property="topDriverPicViewThree" destination="dTs-Hi-xve" id="cbE-QB-UAv"/>
+                        <outlet property="topDriverPicViewTwo" destination="wsI-En-rLm" id="Bm8-jS-PQf"/>
+                        <outlet property="totalRidesLabel" destination="NJE-L9-ihF" id="8iG-cU-eJY"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="884" y="45.42728635682159"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="HLv-4E-ddM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Q9f-tM-8Uf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJP-QC-kfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-ic" width="72" height="72"/>
+        <image name="driver-dummy" width="1440" height="1440"/>
+        <image name="location-ic" width="36" height="36"/>
+        <image name="placeImage-dummy" width="1200" height="800"/>
+        <namedColor name="taxiFontColor">
+            <color red="0.94117647058823528" green="0.71372549019607845" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

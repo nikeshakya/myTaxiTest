@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-class Marker {
+class Marker: Equatable {
     var type: FleetType?
     var id: Int?
     var title: String?
@@ -22,5 +22,11 @@ class Marker {
     }
     var isValidWithAnnotation: Bool {
         return isValid && annotation != nil
+    }
+}
+
+extension Marker {
+    public static func == (lhs: Marker, rhs: Marker) -> Bool {
+        return lhs.id == rhs.id && lhs.type == rhs.type && lhs.title == rhs.title && lhs.coordinate == rhs.coordinate && lhs.heading == rhs.heading && lhs.annotation == rhs.annotation
     }
 }

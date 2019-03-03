@@ -21,6 +21,9 @@ enum Rating: Int {
     case four = 4
     case five = 5
     
+    /// Generates and returns random rating value
+    ///
+    /// - Returns: rating value in range 3 - 5
     static func random() -> Rating {
         let ratingsList: [Rating] = [.three, .four, .five]
         return ratingsList.randomElement()!
@@ -33,6 +36,9 @@ enum DriverStatusMessage: String {
     case busy = "Hey Hey Hey !!!,\nThank you for visiting my profile.\nUnfortunately I am busy right now.\nWe shall meet in future. Good Day!!"
     case unavailable = "Sorry! I am not available at the moment.\nI hope you understand. Take care and have a safe ride."
     
+    /// Generates and returns random status message from list of stored messages
+    ///
+    /// - Returns: Driver's current status message
     static func random() -> DriverStatusMessage {
         let allData: [DriverStatusMessage] = [.available, .delayedAvailable, .busy, .unavailable]
         return allData.randomElement()!
@@ -48,4 +54,10 @@ class Driver: NSObject{
     var statusMessage: DriverStatusMessage!
     var gender: Gender?
     var rating: Rating?
+}
+
+extension Driver {
+    public static func == (lhs: Driver, rhs: Driver) -> Bool {
+        return lhs.id == rhs.id && lhs.taxiId == rhs.taxiId && lhs.fullName == rhs.fullName && lhs.age == rhs.age && lhs.gender == rhs.gender && lhs.rating == rhs.rating
+    }
 }

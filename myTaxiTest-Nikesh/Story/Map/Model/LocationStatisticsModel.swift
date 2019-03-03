@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LocationStatisticModel {
+class LocationStatisticModel: Equatable {
     var coordinate: CLLocationCoordinate2D?
     var imageLink: String?
     var totalRides: Int! = 0
@@ -16,4 +16,10 @@ class LocationStatisticModel {
     var destinationRank: Int! = 0
     var totalRegisteredDrivers: Int! = 0
     var topDrivers: [Driver]?
+}
+
+extension LocationStatisticModel {
+    public static func == (lhs: LocationStatisticModel, rhs: LocationStatisticModel) -> Bool {
+        return lhs.coordinate == rhs.coordinate && lhs.totalRides == rhs.totalRides && lhs.pickupRank == rhs.pickupRank && lhs.destinationRank == rhs.destinationRank && lhs.totalRegisteredDrivers == rhs.totalRegisteredDrivers
+    }
 }

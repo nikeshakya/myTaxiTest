@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 @objc class DriverInfoView: UIView {
-
+    // MARK:- Outlet properties and action methods
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var closeBtn: UIButton!
     @IBOutlet var ratingImages: [UIImageView]!
@@ -29,8 +29,10 @@ import Kingfisher
         closeView()
     }
     
+    // MARK:- Class variables
     var driverDetailsViewModel: DriverDetailsViewModel!
-    var topConstraint: NSLayoutConstraint!
+    
+    // MARK:- Life cycle methods
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,11 +51,17 @@ import Kingfisher
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
+    // MARK:- View Data Coordination and UI update methods
+    
+    /// Re-iniitializes the view with provided view model data object
+    ///
+    /// - Parameter model: View Model object containing driver and vehicle data
     @objc func refreshWithViewModel(model: DriverDetailsViewModel) {
         self.driverDetailsViewModel = model
         self.fillViewWithData()
     }
     
+    /// Updates View Components informtation with view model data
     func fillViewWithData() {
         driverStatusMessageLabel.text = driverDetailsViewModel.getDriverMessage()
         driverGenderLabel.text = driverDetailsViewModel.getDriverGenderString()
@@ -86,6 +94,9 @@ import Kingfisher
         }
     }
     
+    /// Adds self to the specified parent view
+    ///
+    /// - Parameter view: Desired parent view
     @objc func addToView(view: UIView) {
         view.addSubview(self)
         view.sendSubviewToBack(self)
@@ -94,10 +105,12 @@ import Kingfisher
         self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        topConstraint = NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
-        topConstraint.isActive = true
+        self.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
     }
     
+    /// Makes the view visible in parent view
+    ///
+    /// - Parameter view: Parent view to this
     @objc func setVisibleInView(view: UIView) {
         self.frame = view.bounds
         view.bringSubviewToFront(self)

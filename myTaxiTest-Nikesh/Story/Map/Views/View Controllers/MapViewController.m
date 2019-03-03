@@ -11,7 +11,7 @@
 #import "MapBoundCoordinates.h"
 
 @implementation MapViewController
-    
+// MARK:- Life cycle methods
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.viewModel = [[MapViewViewModel alloc] init];
@@ -24,7 +24,15 @@
     [self.mapView setRegion:visibleRegion animated:YES];
     
 }
-    
+
+// MARK:- View Data Coordination Methods
+
+/**
+ Requests view model to fetch vehicles in current visible region edge coordinates
+
+ @param loc1 First edge location coordinate value
+ @param loc2 Second edge location coordinate value
+ */
 - (void)fetchVehiclesInRegion:(CLLocationCoordinate2D)loc1 :(CLLocationCoordinate2D)loc2 {
     [self.viewModel fetchVehiclesInRegionWithLoc1:loc1 loc2:loc2];
 }

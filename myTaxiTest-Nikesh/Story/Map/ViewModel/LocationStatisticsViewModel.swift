@@ -11,6 +11,7 @@ import CoreLocation
 import MapKit
 
 @objc class LocationStatisticsViewModel: NSObject {
+    // MARK:- Variables
     var model: LocationStatisticModel!
     var locationName: String?
     var countryName: String?
@@ -47,6 +48,7 @@ import MapKit
         return "Destination rank: \(model.totalRegisteredDrivers ?? 0)"
     }
     
+    // MARK:- Life cycle methods
     init(model: LocationStatisticModel, city: String, country: String) {
         super.init()
         self.model = model
@@ -55,6 +57,9 @@ import MapKit
         self.fillWithDummyData()
     }
     
+    // MARK:- Network operation and data control methods
+    
+    /// Converts the location point into corresponding Address String
     private func fetchAddressFromCoordinate() {
         let address = CLGeocoder.init()
         address.reverseGeocodeLocation(CLLocation.init(latitude: model.coordinate!.latitude, longitude:model.coordinate!.longitude)) { [weak self] (places, error) in
@@ -66,6 +71,8 @@ import MapKit
             }
         }
     }
+    
+    // MARK:- Auto data generation methods
     
     private func fillWithDummyData() {
         let cityImageLinks = ["https://images.unsplash.com/photo-1428976307195-3095182068f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",

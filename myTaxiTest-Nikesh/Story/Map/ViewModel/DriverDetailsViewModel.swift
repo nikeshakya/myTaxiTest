@@ -9,14 +9,18 @@
 import Foundation
 
 @objc class DriverDetailsViewModel: NSObject {
+    // MARK:- Variables
     var driverModel: Driver!
     var taxiModel: Vehicle!
     
+    // MARK:- Life cycle methods
     init(taxiModel: Vehicle, driverModel: Driver!) {
         super.init()
         self.driverModel = driverModel
         self.taxiModel = taxiModel
     }
+    
+    // MARK:- Model Data to expected UI element data type conversion methods
     
     func getDriversFullName() -> String{
         return driverModel.fullName ?? "Test Driver"

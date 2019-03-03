@@ -16,6 +16,15 @@ enum FleetType: String {
 @objc class LocationValue: NSObject {
     var longitude: Double?
     var latitude: Double?
+    
+    override init() {
+        super.init()
+    }
+    
+    init(lat: Double, lon: Double) {
+        self.latitude = lat
+        self.longitude = lon
+    }
 }
 
 @objc class Vehicle: NSObject {
@@ -33,3 +42,8 @@ enum FleetType: String {
     }
 }
 
+extension Vehicle {
+    public static func == (lhs: Vehicle, rhs: Vehicle) -> Bool {
+        return lhs.id == rhs.id && lhs.name == rhs.name && lhs.fleetType == rhs.fleetType && lhs.coordinates == rhs.coordinates && lhs.heading == rhs.heading && lhs.numberOfSeats == rhs.numberOfSeats
+    }
+}

@@ -11,11 +11,14 @@ import CoreLocation
 import JGProgressHUD
 
 class VehiclesDashboardViewController: UIViewController {
-
+    
+    // MARK:- Outlet Properties and class properties
     @IBOutlet weak var vehiclesListTableView: UITableView!
     
-    let viewModel = VehicleViewModel()
+    let viewModel = VehiclesListViewModel()
     let hud = JGProgressHUD(style: .dark)
+    
+    // MARK:- View life cycle and data request methods
     
     override func viewDidLoad() {
         super.viewDidLoad()

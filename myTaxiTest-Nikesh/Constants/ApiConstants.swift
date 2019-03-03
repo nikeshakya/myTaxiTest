@@ -8,6 +8,9 @@
 
 import Foundation
 
+/// URL links of app api service
+///
+/// - testLink: URL string value for test api
 enum ApiLink: String{
     case testLink = "https://fake-poi-api.mytaxi.com"
 }

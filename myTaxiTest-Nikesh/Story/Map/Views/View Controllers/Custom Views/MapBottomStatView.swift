@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 
 class MapBottomStatView: UIView {
+    // MARK:- Outle Properties and class variables
     @IBOutlet weak var topDriverPicViewThree: UIImageView!
     @IBOutlet weak var topDriverPicViewTwo: UIImageView!
     @IBOutlet weak var topDriverPicViewOne: UIImageView!
@@ -23,10 +24,20 @@ class MapBottomStatView: UIView {
 
     var viewModel: LocationStatisticsViewModel!
     
+    // MARK:- Life cycle methods
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
+    // MARK:- View UI update methods
+    
+    /// Updates View Elements data with model object data
+    ///
+    /// - Parameters:
+    ///   - coordinate: Location value of center map point
+    ///   - city: Corresponding city representation of coordinate
+    ///   - country: Corresponding country representation of coordinate
+    ///   - animated: Boolean representing whether update should be shown with animation
     @objc func updateViewWithAddress(coordinate: CLLocationCoordinate2D, city: String, country: String, animated: Bool = true) {
         self.alpha = 0
         self.isHidden = false

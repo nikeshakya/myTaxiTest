@@ -264,7 +264,7 @@
                         <constraints>
                             <constraint firstItem="5fE-Pp-FuG" firstAttribute="top" secondItem="p2w-zy-eXG" secondAttribute="top" id="1kA-4u-vie"/>
                             <constraint firstItem="oax-0M-dyq" firstAttribute="trailing" secondItem="5fE-Pp-FuG" secondAttribute="trailing" id="K2r-Vj-FuN"/>
-                            <constraint firstItem="oax-0M-dyq" firstAttribute="bottom" secondItem="5fE-Pp-FuG" secondAttribute="bottom" id="Z07-uv-QCK"/>
+                            <constraint firstAttribute="bottom" secondItem="5fE-Pp-FuG" secondAttribute="bottom" id="Z07-uv-QCK"/>
                             <constraint firstItem="j6J-Fr-cZu" firstAttribute="top" secondItem="oax-0M-dyq" secondAttribute="top" constant="20" id="k3R-3M-J42" customClass="AdaptiveLayoutConstraint" customModule="myTaxiTest_Nikesh" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>

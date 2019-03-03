@@ -11,6 +11,10 @@ import MapKit
 import CoreLocation
 
 extension MKMapView {
+    
+    /// Retrieves and returns the visible rect edge coordinates in the map
+    ///
+    /// - Returns: Boundary Point object represntation of visible rect
     @objc func getVisibleBoundCoordinates() -> MapBoundCoordinates {
         let visibleRect = self.visibleMapRect
         let bottomLeft = MKMapPoint(x: visibleRect.origin.x, y: visibleRect.maxY)

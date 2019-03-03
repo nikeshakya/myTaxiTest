@@ -21,13 +21,11 @@
 		9442107E222939FE006A6BBC /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442107D222939FE006A6BBC /* Driver.swift */; };
 		9442108122293B46006A6BBC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108022293B46006A6BBC /* NetworkManager.swift */; };
 		9442108522293CD2006A6BBC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108422293CD2006A6BBC /* RoundedView.swift */; };
-		9442108922293FEE006A6BBC /* MyTaxiAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */; };
 		9442108B2229405B006A6BBC /* AdaptiveLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */; };
 		9442108D2229407C006A6BBC /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108C2229407C006A6BBC /* CGFloatExtension.swift */; };
 		9442108F222941C0006A6BBC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442108E222941C0006A6BBC /* TableViewExtension.swift */; };
 		94421091222941CD006A6BBC /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94421090222941CD006A6BBC /* StackViewExtension.swift */; };
 		94421093222941DC006A6BBC /* TextFontsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94421092222941DC006A6BBC /* TextFontsExtension.swift */; };
-		9442109522294B4F006A6BBC /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109422294B4F006A6BBC /* VehicleViewModel.swift */; };
 		9442109722294BB7006A6BBC /* VehiclesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109622294BB7006A6BBC /* VehiclesManager.swift */; };
 		9442109C22294E75006A6BBC /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109B22294E75006A6BBC /* ApiConstants.swift */; };
 		9442109F22295536006A6BBC /* RegionVehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9442109E22295536006A6BBC /* RegionVehicleTableViewCell.swift */; };
@@ -49,6 +47,12 @@
 		944210EB222BF052006A6BBC /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210EA222BF052006A6BBC /* MyProfileViewController.swift */; };
 		944210ED222BF06C006A6BBC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944210EC222BF06C006A6BBC /* Profile.storyboard */; };
 		944210EF222BF52B006A6BBC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944210EE222BF52B006A6BBC /* UIViewController.swift */; };
+		94CA5E70222C2F8300198AE7 /* VehiclesListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E6F222C2F8300198AE7 /* VehiclesListViewModelTest.swift */; };
+		94CA5E72222C330600198AE7 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E71222C330600198AE7 /* TestService.swift */; };
+		94CA5E74222C36A000198AE7 /* VehiclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E73222C36A000198AE7 /* VehiclesListViewModel.swift */; };
+		94CA5E76222C40A100198AE7 /* MapViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E75222C40A100198AE7 /* MapViewModelTest.swift */; };
+		94CA5E78222C443500198AE7 /* LocationStatisticsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E77222C443500198AE7 /* LocationStatisticsViewModelTest.swift */; };
+		94CA5E7A222C473700198AE7 /* DriverDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA5E79222C473700198AE7 /* DriverDetailsViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,13 +95,11 @@
 		9442107D222939FE006A6BBC /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		9442108022293B46006A6BBC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9442108422293CD2006A6BBC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
-		9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiAppearance.swift; sourceTree = "<group>"; };
 		9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutConstraint.swift; sourceTree = "<group>"; };
 		9442108C2229407C006A6BBC /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		9442108E222941C0006A6BBC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		94421090222941CD006A6BBC /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		94421092222941DC006A6BBC /* TextFontsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFontsExtension.swift; sourceTree = "<group>"; };
-		9442109422294B4F006A6BBC /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
 		9442109622294BB7006A6BBC /* VehiclesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesManager.swift; sourceTree = "<group>"; };
 		9442109B22294E75006A6BBC /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		9442109E22295536006A6BBC /* RegionVehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionVehicleTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +125,12 @@
 		944210EA222BF052006A6BBC /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		944210EC222BF06C006A6BBC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		944210EE222BF52B006A6BBC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		94CA5E6F222C2F8300198AE7 /* VehiclesListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesListViewModelTest.swift; sourceTree = "<group>"; };
+		94CA5E71222C330600198AE7 /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		94CA5E73222C36A000198AE7 /* VehiclesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesListViewModel.swift; sourceTree = "<group>"; };
+		94CA5E75222C40A100198AE7 /* MapViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTest.swift; sourceTree = "<group>"; };
+		94CA5E77222C443500198AE7 /* LocationStatisticsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatisticsViewModelTest.swift; sourceTree = "<group>"; };
+		94CA5E79222C473700198AE7 /* DriverDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsViewModelTest.swift; sourceTree = "<group>"; };
 		959D04E4EC1562C9219CB954 /* Pods-myTaxiTest-NikeshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshUITests.debug.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshUITests/Pods-myTaxiTest-NikeshUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A450F6534DE0325A1E7934 /* Pods-myTaxiTest-NikeshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshUITests.release.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshUITests/Pods-myTaxiTest-NikeshUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6713988A1B2AA681C1BA0DE /* Pods-myTaxiTest-NikeshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTaxiTest-NikeshTests.release.xcconfig"; path = "Target Support Files/Pods-myTaxiTest-NikeshTests/Pods-myTaxiTest-NikeshTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 		9442105B22293855006A6BBC /* myTaxiTest-NikeshTests */ = {
 			isa = PBXGroup;
 			children = (
+				94CA5E6C222C2F2E00198AE7 /* Story */,
 				9442105C22293855006A6BBC /* myTaxiTest_NikeshTests.swift */,
 				9442105E22293855006A6BBC /* Info.plist */,
 			);
@@ -232,7 +241,7 @@
 			children = (
 				944210E9222BF03D006A6BBC /* Profile */,
 				944210A022297483006A6BBC /* Map */,
-				9442107722293876006A6BBC /* Vehicles */,
+				9442107722293876006A6BBC /* VehiclesList */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -247,14 +256,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9442107722293876006A6BBC /* Vehicles */ = {
+		9442107722293876006A6BBC /* VehiclesList */ = {
 			isa = PBXGroup;
 			children = (
 				9442107922293891006A6BBC /* ViewModels */,
 				9442107822293889006A6BBC /* Models */,
 				9442107622293870006A6BBC /* Views */,
 			);
-			path = Vehicles;
+			path = VehiclesList;
 			sourceTree = "<group>";
 		};
 		9442107822293889006A6BBC /* Models */ = {
@@ -270,7 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				9442109822294BBC006A6BBC /* Managers */,
-				9442109422294B4F006A6BBC /* VehicleViewModel.swift */,
+				94CA5E73222C36A000198AE7 /* VehiclesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -288,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				9442108022293B46006A6BBC /* NetworkManager.swift */,
+				94CA5E71222C330600198AE7 /* TestService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -296,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				9442108422293CD2006A6BBC /* RoundedView.swift */,
-				9442108822293FEE006A6BBC /* MyTaxiAppearance.swift */,
 				9442108A2229405B006A6BBC /* AdaptiveLayoutConstraint.swift */,
 			);
 			path = CustomViews;
@@ -417,6 +426,33 @@
 				944210EC222BF06C006A6BBC /* Profile.storyboard */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		94CA5E6C222C2F2E00198AE7 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				94CA5E6E222C2F4500198AE7 /* VechilesList */,
+				94CA5E6D222C2F3800198AE7 /* Map */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		94CA5E6D222C2F3800198AE7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				94CA5E75222C40A100198AE7 /* MapViewModelTest.swift */,
+				94CA5E77222C443500198AE7 /* LocationStatisticsViewModelTest.swift */,
+				94CA5E79222C473700198AE7 /* DriverDetailsViewModelTest.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		94CA5E6E222C2F4500198AE7 /* VechilesList */ = {
+			isa = PBXGroup;
+			children = (
+				94CA5E6F222C2F8300198AE7 /* VehiclesListViewModelTest.swift */,
+			);
+			path = VechilesList;
 			sourceTree = "<group>";
 		};
 		CF8F12EE16EDB4BF099C7332 /* Frameworks */ = {
@@ -670,6 +706,7 @@
 				9442108B2229405B006A6BBC /* AdaptiveLayoutConstraint.swift in Sources */,
 				944210E6222BD9B4006A6BBC /* VehicleDetailsViewController.swift in Sources */,
 				9442109C22294E75006A6BBC /* ApiConstants.swift in Sources */,
+				94CA5E72222C330600198AE7 /* TestService.swift in Sources */,
 				944210B322298EAF006A6BBC /* MapViewController.m in Sources */,
 				944210E4222B93B9006A6BBC /* DriverDetailsViewModel.swift in Sources */,
 				944210DD222ABF88006A6BBC /* LocationStatisticsModel.swift in Sources */,
@@ -686,12 +723,11 @@
 				9442108D2229407C006A6BBC /* CGFloatExtension.swift in Sources */,
 				944210D0222A48CF006A6BBC /* VehicleAnnotation.m in Sources */,
 				944210D9222ABB50006A6BBC /* UIView.swift in Sources */,
-				9442108922293FEE006A6BBC /* MyTaxiAppearance.swift in Sources */,
 				94421091222941CD006A6BBC /* StackViewExtension.swift in Sources */,
 				9442104822293854006A6BBC /* AppDelegate.swift in Sources */,
 				94421093222941DC006A6BBC /* TextFontsExtension.swift in Sources */,
 				944210EF222BF52B006A6BBC /* UIViewController.swift in Sources */,
-				9442109522294B4F006A6BBC /* VehicleViewModel.swift in Sources */,
+				94CA5E74222C36A000198AE7 /* VehiclesListViewModel.swift in Sources */,
 				944210DB222ABF5E006A6BBC /* MapBottomStatView.swift in Sources */,
 				9442107E222939FE006A6BBC /* Driver.swift in Sources */,
 			);
@@ -701,7 +737,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CA5E7A222C473700198AE7 /* DriverDetailsViewModelTest.swift in Sources */,
+				94CA5E78222C443500198AE7 /* LocationStatisticsViewModelTest.swift in Sources */,
 				9442105D22293855006A6BBC /* myTaxiTest_NikeshTests.swift in Sources */,
+				94CA5E76222C40A100198AE7 /* MapViewModelTest.swift in Sources */,
+				94CA5E70222C2F8300198AE7 /* VehiclesListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
